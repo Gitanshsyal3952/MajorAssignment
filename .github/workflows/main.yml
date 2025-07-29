@@ -21,6 +21,9 @@ jobs:
           pip install -r requirements.txt
           pip install pytest
 
+      - name: Train model (for test use)
+        run: python src/train.py
+
       - name: Run Tests
         run: pytest tests/
 
