@@ -1,11 +1,11 @@
 
-# 🧠 MLOps: Linear Regression Pipeline
+## MLOps: Linear Regression Pipeline
 
 This project is built as part of the **MLOps Major Assignment**, focused on creating a complete end-to-end machine learning pipeline using **Linear Regression** with proper CI/CD, Dockerization, and manual quantization.
 
 ---
 
-## 📌 Objective
+## Objective
 
 To demonstrate a reproducible and automated MLOps pipeline including:
 
@@ -17,7 +17,7 @@ To demonstrate a reproducible and automated MLOps pipeline including:
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 ├── src/
@@ -38,7 +38,7 @@ To demonstrate a reproducible and automated MLOps pipeline including:
 
 ---
 
-## ⚙️ Setup Instructions (Local)
+##  Setup Instructions (Local)
 
 ```bash
 # Clone the Repository
@@ -67,21 +67,21 @@ docker run mlops-linear
 
 ---
 
-## 🔁 CI/CD with GitHub Actions
+## CI/CD with GitHub Actions
 
 This repository uses GitHub Actions to automatically:
 
 | Job Name                | Description                                                           | Trigger                |
 |-------------------------|-----------------------------------------------------------------------|------------------------|
-| 🧪 `test-suite`          | Runs `pytest` on push to `main`                                       | Push to `main`         |
-| 🛠️ `train-and-quantize` | Trains model and quantizes parameters                                 | After test-suite       |
-| 🐳 `build-and-test-container` | Builds Docker image and verifies prediction using `predict.py`   | After quantization     |
+|  `test-suite`          | Runs `pytest` on push to `main`                                       | Push to `main`         |
+|  `train-and-quantize` | Trains model and quantizes parameters                                 | After test-suite       |
+| `build-and-test-container` | Builds Docker image and verifies prediction using `predict.py`   | After quantization     |
 
 > CI/CD config is located in: `.github/workflows/ci.yml`
 
 ---
 
-## 📊 Comparison Table
+##  Comparison Table
 
 | Metric               | Unquantized Parameters     | Quantized Parameters (`uint8`) |
 |----------------------|----------------------------|-------------------------------|
@@ -93,7 +93,7 @@ This repository uses GitHub Actions to automatically:
 
 ---
 
-## 📬 Author & Submission
+##  Author & Submission
 
 - **Submitted by**: Gitansh Syal  
 - **Course**: MLOps  
